@@ -41,10 +41,11 @@ namespace TopsyTurvyCakes
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseMvcWithDefaultRoute();
-            app.UseStaticFiles();
-
             app.UseAuthentication();
+            app.UseStaticFiles();
+            app.UseMvcWithDefaultRoute();
+
+           // app.UseAuthentication();
         }
     }
 }
